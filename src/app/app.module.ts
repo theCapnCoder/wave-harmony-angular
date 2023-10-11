@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './routes/app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
 import { BlogComponent } from './components/blog/blog.component';
@@ -18,7 +18,7 @@ import { ProfileComponent } from './components/profile/profile.component';
   declarations: [
     AppComponent,
     AboutComponent,
-    BlogComponent,
+    // BlogComponent,
     CardComponent,
     CatalogComponent,
     CertificateComponent,
