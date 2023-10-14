@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from '../components/about/about.component';
-import { BlogComponent } from '../components/blog/blog.component';
-import { CardComponent } from '../components/card/card.component';
-import { CatalogComponent } from '../components/catalog/catalog.component';
-import { CertificateComponent } from '../components/certificate/certificate.component';
-import { ContactsComponent } from '../components/contacts/contacts.component';
-import { DeliveryComponent } from '../components/delivery/delivery.component';
-import { MainComponent } from '../components/main/main.component';
-import { OrderComponent } from '../components/order/order.component';
-import { ProfileComponent } from '../components/profile/profile.component';
+import { AboutComponent } from '../pages/about/about.component';
+import { BlogComponent } from '../pages/blog/blog.component';
+import { CardComponent } from '../pages/card/card.component';
+import { CatalogComponent } from '../pages/catalog/catalog.component';
+import { CertificateComponent } from '../pages/certificate/certificate.component';
+import { ContactsComponent } from '../pages/contacts/contacts.component';
+import { DeliveryComponent } from '../pages/delivery/delivery.component';
+import { MainComponent } from '../pages/main/main.component';
+import { OrderComponent } from '../pages/order/order.component';
+import { ProfileComponent } from '../pages/profile/profile.component';
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
