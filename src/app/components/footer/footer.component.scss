@@ -1,0 +1,42 @@
+footer {
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+
+  h4 {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    li {
+      margin-bottom: 10px;
+
+      a {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+      }
+    }
+  }
+
+  span {
+    color: #71b2b4;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h4 {
+      margin-bottom: 0;
+    }
+
+    .info {
+      max-width: 235px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
