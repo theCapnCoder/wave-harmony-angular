@@ -14,6 +14,9 @@ import { MainComponent } from './pages/main/main.component';
 import { OrderComponent } from './pages/order/order.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,14 @@ import { FooterComponent } from './components/footer/footer.component';
     ProfileComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    MatSlideToggleModule,
+    MatExpansionModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+  ],
+
   providers: [],
   bootstrap: [AppComponent],
 })
