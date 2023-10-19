@@ -17,6 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { HeroesComponent } from './test/heroes/heroes.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     OrderComponent,
     ProfileComponent,
     FooterComponent,
+    HeroesComponent,
   ],
   imports: [
     BrowserModule,
