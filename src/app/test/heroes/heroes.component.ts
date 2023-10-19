@@ -8,5 +8,9 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./heroes.component.scss'],
 })
 export class HeroesComponent {
+  selectedHero?: Hero;
   heroes = HEROES
+  onSelect(hero: Hero): void {
+    console.log(hero);
+  }
 }
