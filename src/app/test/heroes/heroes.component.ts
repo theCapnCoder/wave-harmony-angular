@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Hero } from './hero';
+import { HEROES, Hero } from './hero';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -8,9 +8,5 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./heroes.component.scss'],
 })
 export class HeroesComponent {
-  hero: Hero = {
-    id: 1,
-    name: 'Windstorm',
-    age: 100,
-  };
+  heroes = HEROES
 }
