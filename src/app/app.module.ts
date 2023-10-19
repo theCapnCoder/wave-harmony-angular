@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { HeroesComponent } from './test/heroes/heroes.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { HeroesComponent } from './test/heroes/heroes.component';
     MatExpansionModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule
   ],
 
   providers: [],

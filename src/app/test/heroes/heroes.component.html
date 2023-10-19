@@ -3,8 +3,13 @@
   <span>Id: {{hero.id}}</span>
 </div>
 <div>
-  <span>Name: {{hero.name}}</span>
+  <span>Name: {{hero.name | uppercase}}</span>
 </div>
 <div>
   <span>Age: {{hero.age}}</span>
+</div>
+
+<div>
+  <label for="name">Hero name:</label>
+  <input type="text" id="name" [(ngModel)]="hero.name" placeholder="name">
 </div>
