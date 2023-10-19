@@ -1,57 +1,101 @@
 <footer>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <h4>Полезные ссылки</h4>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <mat-panel-description>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, dolorem.
-    </mat-panel-description>
-  </mat-expansion-panel>
+  <div class="mobile">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Полезные ссылки
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-panel-description>
+        <ul>
+          <li *ngFor="let link of usefulLinks">
+            <a href={{link.url}}>
+              {{link.name}}
+            </a>
+          </li>
+        </ul>
+      </mat-panel-description>
+    </mat-expansion-panel>
 
-  <div>
-    <h4>Полезные ссылки</h4>
-    <ul>
-      <li *ngFor="let link of usefulLinks">
-        <a href={{link.url}}>
-          {{link.name}}
-        </a>
-      </li>
-    </ul>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Полезные ссылки
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-panel-description>
+        <ul>
+          <li *ngFor="let link of productCategoriesLinks">
+            <a href={{link.url}}>
+              {{link.name}}
+            </a>
+          </li>
+        </ul>
+      </mat-panel-description>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Часто ищут
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-panel-description>
+        <ul>
+          <li *ngFor="let link of frequentlySearchedLinks">
+            <a href={{link.url}}>
+              {{link.name}}
+            </a>
+          </li>
+        </ul>
+      </mat-panel-description>
+    </mat-expansion-panel>
   </div>
 
-  <div>
-    <h4>Категории товаров</h4>
-    <ul>
-      <li *ngFor="let link of productCategoriesLinks">
-        <a href={{link.url}}>
-          {{link.name}}
-        </a>
-      </li>
-    </ul>
-  </div>
+  <div class="desktop">
+    <div>
+      <h4>Полезные ссылки</h4>
+      <ul>
+        <li *ngFor="let link of usefulLinks">
+          <a href={{link.url}}>
+            {{link.name}}
+          </a>
+        </li>
+      </ul>
+    </div>
 
-  <div class="search">
-    <h4>Часто ищут</h4>
-    <ul>
-      <li *ngFor="let link of frequentlySearchedLinks">
-        <a href={{link.url}}>
-          {{link.name}}
-        </a>
-      </li>
-    </ul>
-  </div>
+    <div>
+      <h4>Категории товаров</h4>
+      <ul>
+        <li *ngFor="let link of productCategoriesLinks">
+          <a href={{link.url}}>
+            {{link.name}}
+          </a>
+        </li>
+      </ul>
+    </div>
 
-  <div class="contact">
-    <h4>Контактные данные</h4>
-    <p>zakaz@waveharmony.com</p>
-    <span>8 (800) 511-36-39</span>
+    <div class="search">
+      <h4>Часто ищут</h4>
+      <ul>
+        <li *ngFor="let link of frequentlySearchedLinks">
+          <a href={{link.url}}>
+            {{link.name}}
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    <div class="info">
-      <p>Информация для покупателей</p>
-      <p>Wave Harmony - женская одежда для серфинга и любых других, водных видов спорта.</p>
-      <p>Все права защищены. 2021</p>
+    <div class="contact">
+      <h4>Контактные данные</h4>
+      <p>zakaz@waveharmony.com</p>
+      <span>8 (800) 511-36-39</span>
+
+      <div class="info">
+        <p>Информация для покупателей</p>
+        <p>Wave Harmony - женская одежда для серфинга и любых других, водных видов спорта.</p>
+        <p>Все права защищены. 2021</p>
+      </div>
     </div>
   </div>
 </footer>
