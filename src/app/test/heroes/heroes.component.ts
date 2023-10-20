@@ -11,6 +11,7 @@ export class HeroesComponent {
   selectedHero?: Hero;
   heroes = HEROES
   onSelect(hero: Hero): void {
+    this.selectedHero = hero;
     console.log(hero);
   }
 }
