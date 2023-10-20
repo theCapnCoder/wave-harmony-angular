@@ -20,6 +20,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { HeroesComponent } from './test/heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './test/hero-detail/hero-detail.component';
+import { MessagesComponent } from './test/messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { HeroDetailComponent } from './test/hero-detail/hero-detail.component';
     FooterComponent,
     HeroesComponent,
     HeroDetailComponent,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule,
