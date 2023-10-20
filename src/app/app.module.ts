@@ -19,6 +19,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { HeroesComponent } from './test/heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
+import { HeroDetailComponent } from './test/hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { FormsModule } from '@angular/forms';
     ProfileComponent,
     FooterComponent,
     HeroesComponent,
+    HeroDetailComponent,
   ],
   imports: [
     BrowserModule,
