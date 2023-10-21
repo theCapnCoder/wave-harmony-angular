@@ -21,6 +21,7 @@ import { HeroesComponent } from './test/heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './test/hero-detail/hero-detail.component';
 import { MessagesComponent } from './test/messages/messages.component';
+import { DashboardComponent } from './test/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { MessagesComponent } from './test/messages/messages.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
