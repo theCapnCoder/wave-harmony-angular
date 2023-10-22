@@ -29,6 +29,7 @@ import { MyInputComponent } from './test/my-input/my-input.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+import { MyStylesComponent } from './test/my-styles/my-styles.component';
 
 const matAngModules = [
   MatExpansionModule,
@@ -57,6 +58,7 @@ const matAngModules = [
     OrderComponent,
     ProfileComponent,
     MyInputComponent,
+    MyStylesComponent,
   ],
   imports: [
     ...matAngModules,

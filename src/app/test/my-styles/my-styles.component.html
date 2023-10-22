@@ -1,0 +1,35 @@
+<div class="container">
+  <p>Default button</p>
+  <button class="btn btn-primary">Button</button>
+
+  <p>Equivalent button using Button</p>
+  <div class="flex">
+    <button class="btn" [class.btn-primary]="true" type="submit">
+      Button True
+    </button>
+    <button class="btn" [class.btn-primary]="false" type="submit">
+      Button True
+    </button>
+  </div>
+
+  <!-- <p>Passing an Array of classes</p>
+  <button [ngClass]="['btn', 'btn-primary']">Button</button>
+
+  <p>Passing a string:</p>
+  <button [ngClass]="'btn btn-primary'">Button</button>
+
+  <p>Passing a configuration object:</p>
+  <button [ngClass]="{ btn: true, 'btn-primary': true }">Button</button>
+
+  <p>State flag</p>
+  <div class="flex">
+    <button (click)="toggleClass(0)" [ngClass]="calculateClass(1)" type="submit">1</button>
+    <button (click)="toggleClass(1)" [ngClass]="calculateClass(2)" type="submit">2</button>
+    <button (click)="toggleClass(2)" [ngClass]="calculateClass(3)" type="submit">3</button>
+  </div>
+
+  <p>Passing an object to ngStyle</p>
+  <button [ngStyle]="{ background: 'red' }">Button</button>
+</div>
+
+<button class="btn-red">Button Head</button> -->
