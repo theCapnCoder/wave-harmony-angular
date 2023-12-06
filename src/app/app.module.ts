@@ -28,8 +28,13 @@ import { InMemoryDataService } from './test/in-memory-data.service';
 import { MyInputComponent } from './test/my-input/my-input.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyStylesComponent } from './test/my-styles/my-styles.component';
+import { RxjsComponent } from './test/AutoTest/rxjs/rxjs.component';
+import { CartComponent } from './test/form/cart/cart.component';
+import { NameEditorComponent } from './test/form/name-editor/name-editor.component';
+import { ProfileEditorComponent } from './test/form/profile-editor/profile-editor.component';
+import { HeroFormComponent } from './test/form/hero-form/hero-form.component';
 
 const matAngModules = [
   MatExpansionModule,
@@ -59,6 +64,11 @@ const matAngModules = [
     ProfileComponent,
     MyInputComponent,
     MyStylesComponent,
+    RxjsComponent,
+    CartComponent,
+    NameEditorComponent,
+    ProfileEditorComponent,
+    HeroFormComponent,
   ],
   imports: [
     ...matAngModules,
@@ -66,6 +76,7 @@ const matAngModules = [
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
