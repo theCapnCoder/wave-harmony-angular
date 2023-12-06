@@ -1,0 +1,47 @@
+:host {
+  border: 10px solid #000;
+  padding: 20px;
+  width: 100px;
+  display: block;
+  background: red;
+}
+
+.container {
+  .flex:nth-child(2) {
+    margin-bottom: 20px;
+    background: brown;
+    padding: 100px;
+    width: 300px;
+  }
+
+  .flex:nth-of-type(1) {
+    margin-bottom: 20px;
+    background: green;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .flex {
+    display: flex;
+    gap: 10px;
+  }
+  .btn-primary {
+    background: #71b2b4;
+  }
+
+  button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+.btn-red {
+  background: red;
+}
+
+:host ::ng-deep .btn-red {
+  background: red;
+}

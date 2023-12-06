@@ -10,8 +10,19 @@ import { DeliveryComponent } from '../pages/delivery/delivery.component';
 import { MainComponent } from '../pages/main/main.component';
 import { OrderComponent } from '../pages/order/order.component';
 import { ProfileComponent } from '../pages/profile/profile.component';
+import { HeroesComponent } from '../test/heroes/heroes.component';
+import { DashboardComponent } from '../test/dashboard/dashboard.component';
+import { HeroDetailComponent } from '../test/hero-detail/hero-detail.component';
+
+const heroesRoutes: Routes = [
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'detail/:id', component: HeroDetailComponent },
+  { path: 'heroes', component: HeroesComponent },
+];
 
 const routes: Routes = [
+  ...heroesRoutes,
   { path: 'about', component: AboutComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'card', component: CardComponent },
@@ -19,9 +30,9 @@ const routes: Routes = [
   { path: 'certificate', component: CertificateComponent },
   { path: 'contacts', component: ContactsComponent },
   { path: 'delivery', component: DeliveryComponent },
-  { path: 'main', component: MainComponent },
   { path: 'order', component: OrderComponent },
   { path: 'profile', component: ProfileComponent },
+  // { path: '**', redirectTo: '/' },
 ];
 
 @NgModule({

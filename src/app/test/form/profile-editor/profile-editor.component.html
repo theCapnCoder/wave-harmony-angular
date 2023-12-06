@@ -1,0 +1,82 @@
+<h1>Group form controls</h1>
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <label for="firstName">First name: </label>
+  <input type="text" id="firstName" formControlName="firstName">
+
+  <label for="lastName">Last name: </label>
+  <input type="text" id="lastName" formControlName="lastName">
+
+  <p>Value: {{profileForm.value | json}}</p>
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>
+
+<h1>Created nested form groups</h1>
+<form [formGroup]="profileFormNested">
+  <label for="firstName">First name: </label>
+  <input type="text" id="firstName" formControlName="firstName">
+
+  <label for="lastName">Last name: </label>
+  <input type="text" id="lastName" formControlName="lastName">
+
+  <div formGroupName="address">
+    <h2>Address</h2>
+
+    <label for="street">Street: </label>
+    <input type="text" id="street" formControlName="street">
+
+    <label for="city">City: </label>
+    <input type="text" id="city" formControlName="city">
+
+    <label for="state">State: </label>
+    <input type="text" id="state" formControlName="state">
+
+    <label for="zip">Zip: </label>
+    <input type="text" id="zip" formControlName="zip">
+  </div>
+</form>
+
+<button (click)="updateProfileNested()">Update Profile Nested</button>
+
+<h1>Using the FormBuilder service to generate controls</h1>
+<form [formGroup]="profileFormBuilder">
+  <label for="firstName">First name: </label>
+  <input type="text" id="firstName" formControlName="firstName">
+
+  <label for="lastName">Last name: </label>
+  <input type="text" id="lastName" formControlName="lastName">
+
+  <div formGroupName="address">
+    <h2>Address</h2>
+
+    <label for="street">Street: </label>
+    <input type="text" id="street" formControlName="street">
+
+    <label for="city">City: </label>
+    <input type="text" id="city" formControlName="city">
+
+    <label for="state">State: </label>
+    <input type="text" id="state" formControlName="state">
+
+    <label for="zip">Zip: </label>
+    <input type="text" id="zip" formControlName="zip">
+  </div>
+  <p>Form Status: {{profileFormBuilder.status}}</p>
+  <button type="submit">Submit</button>
+</form>
+
+<h1>Creating dynamic forms</h1>
+
+<form [formGroup]="profileFormDynamic">
+  <div formArrayName="aliases">
+    <h2>Aliases</h2>
+    <button type="button" (click)="addAlias()">+ add another alias</button>
+
+    <div *ngFor="let alias of aliases.controls; let i = index">
+      <label for="alias-{{i}}">Alias:</label>
+      <input type="text" id="alias-{{i}}" [formControlName]="i">
+    </div>
+
+  </div>
+  <button type="submit">Submit</button>
+</form>
